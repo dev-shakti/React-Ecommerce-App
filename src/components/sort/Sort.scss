@@ -1,0 +1,44 @@
+
+.side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .icons{
+        cursor: pointer;
+        background-color: #f2f2f2;
+        padding: 5px;
+        color: #444;
+
+        &.active{
+            background-color:#333;
+            color: #f2f2f2;
+        }
+    }
+}
+
+.products{
+    font-size: 16px;
+    color: #555;
+
+    @media only screen and (max-width:768px){
+        font-size: 14px;
+    }
+    @media only screen and (max-width:480px){
+        display: none;
+    }
+}
+
+select{
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    option{
+        cursor: pointer;
+    }
+}

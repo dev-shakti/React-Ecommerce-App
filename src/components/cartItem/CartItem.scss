@@ -1,0 +1,76 @@
+.cart-items{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   color: #555;
+   font-size: 15px;
+   align-items: center;
+
+   @media only screen and (max-width:480px){
+    font-size: 12px;
+   }
+
+    .item-info{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        
+        img{
+           width: 40px;
+           height: 40px;
+           object-fit: cover;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            .item-color{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                span{
+    
+                }
+                .color-div{
+                   width: 15px;
+                   height: 15px;
+                   border-radius: 50%;
+                }
+            }
+           
+        }
+    }
+
+    .item-quantity{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        @media only screen and (max-width:480px){
+            font-size: 12px;
+           }
+        
+        .quant-btn{
+            background-color: #f5f6fa;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin: 0px 5px;
+            .qunatity-icon{
+                @media only screen and (max-width:480px){
+                    font-size: 18px;
+                   }
+            }
+        }
+    }
+
+    .delete-icon{
+        color: red;
+        cursor: pointer;
+        @media only screen and (max-width:480px){
+            font-size: 18px;
+           }
+    }
+}
+

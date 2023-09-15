@@ -1,0 +1,188 @@
+.product {
+   padding: 20px 50px;
+   display: flex;
+   gap: 50px;
+
+   @media only screen and (max-width:768px) {
+      flex-direction: column;
+      padding: 50px;
+   }
+
+   @media only screen and (max-width:480px) {
+      padding: 20px;
+   }
+
+   .left {
+      flex: 1;
+      display: flex;
+      gap: 30px;
+
+      @media only screen and (max-width:768px) {
+         width: 100%;
+         gap: 15px;
+      }
+
+      .image {
+         flex: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+
+         @media only screen and (max-width:768px) {
+            flex: 1;
+         }
+
+         img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            margin-bottom: 10px;
+         }
+      }
+
+      .mainImage {
+         flex: 5;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+
+         @media only screen and (max-width:768px) {
+            flex: 3;
+         }
+
+         img {
+            width: 100%;
+            max-height: 800px;
+            object-fit: cover;
+
+            @media only screen and (max-width:768px) {
+               height: 80%;
+            }
+
+            @media only screen and (max-width:480px) {
+               height: 70%;
+            }
+         }
+      }
+   }
+
+   .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media only screen and (max-width:768px) {
+         width: 100%;
+         text-align: center;
+      }
+
+      h1 {
+         color: #555;
+         font-weight: 500;
+      }
+
+      .price {
+         font-size: 30px;
+         color: #2879fe;
+         font-weight: 500;
+      }
+
+      p {
+         text-align: justify;
+         font-size: 15px;
+         font-weight: 300;
+         color: gray;
+         width: 70%;
+         line-height: 1.4;
+
+         @media only screen and (max-width:768px) {
+            width: 100%;
+            font-size: 14px;
+            line-height: 1.2;
+         }
+
+         @media only screen and (max-width:480px) {
+            font-size: 13px;
+         }
+
+         b {
+            color: #333;
+            font-weight: 700;
+         }
+      }
+
+      .mrp {
+         font-size: 17px;
+         color: #444;
+         font-weight: bold;
+
+         span {
+            text-decoration: line-through;
+         }
+      }
+
+      .deal {
+         color: #2879fe;
+         font-weight: 700;
+         font-size: 18px;
+      }
+
+      .warrenty {
+         width: 70%;
+         display: flex;
+         justify-content: space-between;
+
+         @media only screen and (max-width:768px) {
+            width: 100%;
+         }
+
+         .items {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            @media only screen and (max-width:768px) {
+               font-size: 14px;
+            }
+
+            @media only screen and (max-width:768px) {
+               font-size: 13px;
+            }
+
+            span {
+               color: gray;
+            }
+         }
+      }
+
+      .links {
+         display: flex;
+         gap: 20px;
+
+         .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #2879fe;
+         }
+      }
+
+      hr {
+         border: 1px solid rgb(159, 157, 157);
+         width: 60%;
+
+         @media only screen and (max-width:600px) {
+            width: 100%;
+
+         }
+      }
+
+
+   }
+
+}

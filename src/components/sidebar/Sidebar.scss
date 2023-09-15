@@ -1,0 +1,116 @@
+.searchInput{
+    padding: 10px;
+    width: 60%;
+    outline: none;
+    font-weight: 300;
+    color: #555;
+
+  
+    
+  }
+
+  h2{
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .cats{
+    display: flex;
+    flex-direction: column;
+    color: #555;
+    gap: 10px;
+
+    .btn-category{
+         cursor: pointer;
+         border: none;
+         outline: none;
+         background-color: transparent;
+         color:gray;
+         font-size: 17px;
+         text-align: left;
+         font-weight: 500;
+
+           @media only screen and (max-width:768px){
+            font-size: 14px;     
+        }
+    }
+  }
+
+  .company-cat{
+    h2{
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+  .filter-colors{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+     .filter-color{
+       display: flex;
+       align-items: center;
+       gap: 10px;
+
+       .allBtn{
+        border: none;
+        outline: none;
+        font-size: 15px;
+       }
+
+      .color-btn{  
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        opacity: 0.5;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+         @media only screen and (max-width:768px){
+            width: 13px;
+            height: 13px;    
+        }
+
+        &.active{
+          opacity: 1;
+        }
+    }
+     }
+  
+  }
+
+  .filterItem{
+    display: flex;
+    align-items: center;  
+      
+    .rangeInput{
+      width: 50%;
+      margin: 0px 5px;
+    }
+  } 
+
+ 
+
+  .filter-btn{
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    background-color: #eb4d4b;
+    min-width: 150px;
+    width: 60%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+    &:hover{
+      background-color: rgb(250, 45, 9)
+    }
+  }

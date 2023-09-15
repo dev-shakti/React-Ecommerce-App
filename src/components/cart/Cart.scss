@@ -1,0 +1,107 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container{
+    width: 90%;
+    max-width:960px;
+    margin: auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+
+    .cart-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p{
+        color: gray;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        @media only screen and (max-width:480px){
+          font-size: 13px;
+         }
+      }
+      
+    }
+
+    .cart-item{
+      
+    }
+    hr{
+       border: 0.5px solid rgb(225, 224, 224);
+       margin: 15px 0;
+       height: 0;
+    }
+    .cart-buttons{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+       .cart-btn{
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+        @media only screen and (max-width:480px){
+          padding: 8px 12px;
+         }
+       }
+
+       .shopping-btn{
+        background-color: #2879fe;
+
+        &:hover{
+          background-color: #0f69fb;
+          transform: scale(1.01);
+        }
+       }
+       .clear-btn{
+        background-color: #eb4d4b;
+
+        &:hover{
+          background-color: rgb(228, 45, 25);
+          transform: scale(1.01);
+        }
+       }
+    }
+    .bottom{
+       display: flex;
+       justify-content: flex-end;
+       margin-top: 100px;
+
+       .more-info{
+        background-color: #ecf0f1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        @media only screen and (max-width:480px){
+          padding: 15px;
+         }
+
+        .item-info{
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+
+          @media only screen and (max-width:480px){
+            font-size: 13px;
+           }
+          .subtotal,.shipping,.order{
+            font-weight: 300;
+            color: gray;
+          }
+        }
+       }
+    }
+  }
+}
