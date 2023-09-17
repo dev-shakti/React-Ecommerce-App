@@ -1,6 +1,9 @@
-.grid{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.grid{ 
+    display: grid;  
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
     
+    @media(max-width: 600px){
+        grid-template-columns: 1fr;
+    }
 }

@@ -18,15 +18,15 @@ const Sort = () => {
         <div className={!grid_view ? "icons active" : "icons"}
          onClick={setListView }
          >
-          <ViewListIcon />
+          <ViewListIcon className="icon"/>
         </div>
         <div className={grid_view ? "icons active" : "icons"}
         onClick={setGridView }
          >
-          <GridViewIcon />
+          <GridViewIcon className="icon"/>
         </div>
       </div>
-      <div className="products">{filter_products.length} Products available</div>
+      <div className="available-products">{filter_products.length} Products available</div>
       <form >
         <select id="dropdown" name="dropdown" onChange={(e) => sorting(e.target.value)}>
           <option value="a-z">Price(a-z)</option>

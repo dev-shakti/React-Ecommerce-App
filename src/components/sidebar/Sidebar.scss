@@ -3,10 +3,7 @@
     width: 60%;
     outline: none;
     font-weight: 300;
-    color: #555;
-
-  
-    
+    color: #555;   
   }
 
   h2{
@@ -31,9 +28,12 @@
          text-align: left;
          font-weight: 500;
 
-           @media only screen and (max-width:768px){
-            font-size: 14px;     
+           @media only screen and (max-width:600px){
+              font-size: 15px; 
         }
+        @media only screen and (max-width:480px){
+          font-size: 14px; 
+    }
     }
   }
 
@@ -42,8 +42,6 @@
       margin-bottom: 20px;
     }
   }
-
-
 
   .filter-colors{
     display: flex;
@@ -95,8 +93,6 @@
       margin: 0px 5px;
     }
   } 
-
- 
 
   .filter-btn{
     border: none;

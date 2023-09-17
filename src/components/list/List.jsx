@@ -6,7 +6,7 @@ import { NavLink, useParams } from "react-router-dom";
 const List = () => {
 
   const {filter_products}=useFilterContext();
-  const {id}=useParams()
+  const {id}=useParams();
   
   return (
     <div className="list">
@@ -14,6 +14,7 @@ const List = () => {
         filter_products.map((product) => {
           return <div className="ListItem" key={product.id}>
             <div className="left">
+              
               <img src={product.image} alt={product.name}/>
             </div>
             <div className="right">

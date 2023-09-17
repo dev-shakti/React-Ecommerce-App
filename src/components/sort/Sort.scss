@@ -1,35 +1,38 @@
-
-.side{
+.side {
     display: flex;
     align-items: center;
     gap: 10px;
 
-    .icons{
+    .icons {
         cursor: pointer;
         background-color: #f2f2f2;
         padding: 5px;
         color: #444;
 
-        &.active{
-            background-color:#333;
+        .icon {
+            @media(max-width:480px) {
+                font-size: 18px;
+            }
+        }
+
+        &.active {
+            background-color: #333;
             color: #f2f2f2;
         }
     }
 }
 
-.products{
+.available-products {
     font-size: 16px;
     color: #555;
 
-    @media only screen and (max-width:768px){
-        font-size: 14px;
-    }
-    @media only screen and (max-width:480px){
+    @media only screen and (max-width:600px) {
         display: none;
     }
+
 }
 
-select{
+select {
     padding: 10px 20px;
     font-size: 14px;
     color: #555;
@@ -38,7 +41,12 @@ select{
     outline: none;
     cursor: pointer;
 
-    option{
+    @media only screen and (max-width:600px) {
+        padding: 5px;
+    }
+
+    option {
         cursor: pointer;
+
     }
 }
