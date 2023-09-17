@@ -4,11 +4,9 @@ import { cartReducer } from "../reducer/cartReducer";
 
 const getCartList = () => {
     let localCartData = localStorage.getItem("list")
-    if (localCartData.length===0) {
-        return []
-    } else {
-        return JSON.parse(localCartData)
-    }
+    const parseData=JSON.parse(localCartData);
+    if(!Array.isArray(parseData)) return [];
+    return parseData;
 }
 
 const initial_state = {

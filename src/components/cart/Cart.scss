@@ -28,9 +28,6 @@
       
     }
 
-    .cart-item{
-      
-    }
     hr{
        border: 0.5px solid rgb(225, 224, 224);
        margin: 15px 0;
@@ -76,7 +73,7 @@
        display: flex;
        justify-content: flex-end;
        margin-top: 100px;
-
+       
        .more-info{
         background-color: #ecf0f1;
         padding: 20px;
@@ -84,6 +81,7 @@
         flex-direction: column;
         gap: 10px;
         width: 200px;
+
         @media only screen and (max-width:480px){
           padding: 15px;
          }
@@ -96,6 +94,7 @@
           @media only screen and (max-width:480px){
             font-size: 13px;
            }
+
           .subtotal,.shipping,.order{
             font-weight: 300;
             color: gray;
