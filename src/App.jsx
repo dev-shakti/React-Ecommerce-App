@@ -1,5 +1,6 @@
-import React from "react"
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import React from "react";
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import HashRouter
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -8,50 +9,30 @@ import Products from "./pages/Products/Products";
 import "./app.scss"
 import Cart from "./components/cart/Cart";
 
-const Layout= () => {
+const Layout= ({children}) => {
   return (
     <div className="app">
       <Navbar />
-      <Outlet />
+      {children}
       <Footer />
     </div>
   );
 }
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element:<Layout/>,
-    
-    children:[
-      {
-        path:"/",
-        element:<Home/>
-      },
-      {
-        path:"/products/:id",
-        element:<Products/>
-      },
-      {
-        path:"/product/:id",
-        element:<Product/>
-      },
-      {
-        path:"/cart",
-        element:<Cart/>
-      },
-
-    ]
-  },
- 
-]);
-
 function App() {
   
+
   return (
-    <div>
-       <RouterProvider router={router} />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products/:id" element={<Products />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Layout>
+    </Router>  
   )
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "ecommerce-webapp",
   "homepage": " https://dev-shakti.github.io/React-Ecommerce-App",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
